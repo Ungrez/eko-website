@@ -7,7 +7,15 @@
   box-sizing: border-box;
   font-family: Montserrat, Helvetica, sans-serif;
 }
+body {
+  opacity: 0;
+  transition: 0.4s;
+}
+body.loaded {
+  opacity: 1;
+}
 div#main-container {
   width: 100vw;
   min-height: 100vh;
+  overflow: hidden;
 }

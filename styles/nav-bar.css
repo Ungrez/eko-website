@@ -8,6 +8,12 @@
     height: 10vh;
     justify-content: space-between;
     z-index: 1;
+    box-shadow: 0 8px 24px 0px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+  }
+  nav.hiden-nav {
+    top: -10vh;
+    box-shadow: none;
   }
   nav div.logo {
     align-self: center;
