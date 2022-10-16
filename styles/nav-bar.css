@@ -1,9 +1,13 @@
 @media (width: 375px) and (orientation: portrait) {
   nav {
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100vw;
     background-color: hsl(0, 0%, 100%);
     height: 10vh;
     justify-content: space-between;
+    z-index: 1;
   }
   nav div.logo {
     align-self: center;
@@ -22,6 +26,7 @@
     right: -100vw;
     transition: 0.5s;
     font-weight: 500;
+    opacity: 0.97;
   }
   ul.nav-links.active {
     right: 0;

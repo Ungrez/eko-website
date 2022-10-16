@@ -8,5 +8,6 @@ const handleShowNavBar = () => {
 const handleHideNavBar = () => {
   navBar.classList.remove("active");
 };
+
 buttonShowNavBar.addEventListener<"click">("click", handleShowNavBar);
 closeNavBar.addEventListener<"click">("click", handleHideNavBar);
