@@ -15,7 +15,20 @@ body.loaded {
   opacity: 1;
 }
 div#main-container {
+  position: relative;
   width: 100vw;
   min-height: 100vh;
   overflow: hidden;
+}
+div#main-container div#scrollTop {
+  position: fixed;
+  bottom: -100px;
+  right: 20px;
+  transition: 0.3s;
+}
+div#main-container div#scrollTop.active {
+  bottom: 20px;
+}
+div#main-container div#scrollTop i {
+  font-size: 32px;
 }

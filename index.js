@@ -5,6 +5,7 @@ var closeNavBar = document.querySelector("#close-button");
 var aboutSection = document.querySelector("section#about");
 var mainSection = document.querySelector("main");
 var showMoreButton = document.querySelector("#show-about");
+var scrollTopButton = document.querySelector("#scrollTop");
 var lastScrollY = window.scrollY;
 var handleShowNavBar = function () {
     navBarMenu.classList.add("active");
@@ -18,7 +19,7 @@ var handleShowAbout = function () {
     });
 };
 var scrollEffect = function () {
-    if (lastScrollY < window.scrollY) {
+    if (lastScrollY < window.scrollY && window.scrollY > 50) {
         navBar.classList.add("hiden-nav");
         navBarMenu.classList.remove("active");
     }
@@ -38,10 +39,19 @@ var scrollEffect = function () {
     else {
         mainSection.classList.remove("loaded");
     }
+    if (window.scrollY > 250) {
+        scrollTopButton.classList.add("active");
+    }
+    else {
+        scrollTopButton.classList.remove("active");
+    }
 };
 buttonShowNavBar.addEventListener("click", handleShowNavBar);
 closeNavBar.addEventListener("click", handleHideNavBar);
 showMoreButton.addEventListener("click", handleShowAbout);
+scrollTopButton.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
 document.addEventListener("scroll", scrollEffect);
 window.onload = function () {
     setTimeout(function () {
