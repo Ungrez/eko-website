@@ -90,17 +90,17 @@
   div#burger div.line {
     border-radius: 5px;
   }
-  div.line:nth-child(1) {
+  div#burger div.line:nth-child(1) {
     background-color: #333;
     height: 20%;
     width: 100%;
   }
-  div.line:nth-child(2) {
+  div#burger div.line:nth-child(2) {
     background-color: #333;
     height: 20%;
     width: 100%;
   }
-  div.line:nth-child(3) {
+  div#burger div.line:nth-child(3) {
     background-color: #333;
     height: 20%;
     width: 100%;

@@ -15,6 +15,7 @@ main:before {
   position: absolute;
   display: block;
 }
+
 section#description {
   position: relative;
   display: flex;
@@ -28,13 +29,29 @@ section#description h1 {
   padding-bottom: 20px;
 }
 section#description h2 {
-  color: rgb(17, 57, 17);
+  color: rgb(15, 74, 15);
   padding-left: 5px;
 }
 section#description h4 {
   font-weight: 500;
-  padding-left: 5px;
-  padding: 10px 0;
+  padding: 10px 0 20px 5px;
+}
+div#main-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 10px;
+  transition: 0.3s;
+}
+div#main-buttons button:nth-child(1) {
+  background-color: rgb(15, 74, 15);
+  color: #ffffff;
+}
+div#main-buttons button:active {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0 0 8px 0 black;
 }
 @keyframes slide {
   from {

@@ -1,0 +1,20 @@
+section#about {
+  min-height: 100vh;
+}
+section#about h2 {
+  text-align: center;
+  padding: 50px 5px 0;
+}
+section#about div#about-box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 130vh;
+  justify-content: space-evenly;
+}
+section#about div.small-box {
+  flex-basis: 25%;
+  background-color: white;
+  box-shadow: 0 8px 24px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
