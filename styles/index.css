@@ -1,0 +1,13 @@
+@import url("nav-bar.css");
+@import url("main-section.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+div#main-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #ccc;
+}
