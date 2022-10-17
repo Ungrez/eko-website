@@ -1,0 +1,55 @@
+section#about div.small-box div.text-about {
+  flex-basis: 45%;
+  padding: 20px;
+  font-weight: 500;
+}
+div.text-about span {
+  font-weight: 700;
+}
+section#about div.small-box div.about-small-box {
+  flex-basis: 55%;
+  display: flex;
+}
+section#about div.small-box:nth-child(1) div.solar-panels {
+  flex-basis: 35%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url("../imgs/solar-panels.svg");
+}
+section#about div.small-box:nth-child(1) div.lines {
+  flex-basis: 30%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+div.lines div.line {
+  width: 25%;
+  height: 0.3em;
+}
+div.lines div.line:nth-child(1) {
+  background-color: rgb(66, 208, 73);
+  animation: loadingEnergy 1s ease-in-out infinite alternate;
+}
+div.lines div.line:nth-child(2) {
+  background-color: rgb(66, 208, 73);
+  animation: loadingEnergy 1s 0.33s ease-in-out infinite alternate;
+}
+div.lines div.line:nth-child(3) {
+  background-color: rgb(66, 208, 73);
+  animation: loadingEnergy 1s 0.66s ease-in-out infinite alternate;
+}
+section#about div.small-box:nth-child(1) div.piggy-bank {
+  flex-basis: 35%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url("../imgs/piggy-bank.svg");
+}
+@keyframes loadingEnergy {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
