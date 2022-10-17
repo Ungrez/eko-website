@@ -20,14 +20,14 @@ const handleShowAbout = () => {
   });
 };
 const scrollEffect = () => {
-  if (lastScrollY < window.scrollY && window.scrollY > 50) {
+  if (lastScrollY < window.scrollY && window.scrollY > 80) {
     navBar.classList.add("hiden-nav");
     navBarMenu.classList.remove("active");
   } else {
     navBar.classList.remove("hiden-nav");
   }
   lastScrollY = window.scrollY;
-  if (window.scrollY > 400) {
+  if (window.scrollY > 300) {
     aboutSection.classList.add("loaded");
   } else {
     aboutSection.classList.remove("loaded");

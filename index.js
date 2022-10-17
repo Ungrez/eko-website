@@ -19,7 +19,7 @@ var handleShowAbout = function () {
     });
 };
 var scrollEffect = function () {
-    if (lastScrollY < window.scrollY && window.scrollY > 50) {
+    if (lastScrollY < window.scrollY && window.scrollY > 80) {
         navBar.classList.add("hiden-nav");
         navBarMenu.classList.remove("active");
     }
@@ -27,7 +27,7 @@ var scrollEffect = function () {
         navBar.classList.remove("hiden-nav");
     }
     lastScrollY = window.scrollY;
-    if (window.scrollY > 400) {
+    if (window.scrollY > 300) {
         aboutSection.classList.add("loaded");
     }
     else {
