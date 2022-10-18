@@ -9,10 +9,11 @@ class Curiosities {
     document.addEventListener("scroll", this.scrollEffect);
   }
   scrollEffect = () => {
-    if (window.scrollY >= 1200) {
+    if (window.scrollY >= 1400) {
+      this.container.classList.add("loaded");
       this.smallBox1.classList.add("loaded");
     }
-    if (window.scrollY >= 1400) {
+    if (window.scrollY >= 1500) {
       this.smallBox2.classList.add("loaded");
     }
     if (window.scrollY >= 1600) {

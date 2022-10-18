@@ -6,8 +6,11 @@ section#curiosities {
   position: relative;
   height: 80vh;
   padding: 20px;
-  transition: 0.5s;
-  /* opacity: 0; */
+  transition: 0.8s;
+  opacity: 0;
+}
+section#curiosities.loaded {
+  opacity: 1;
 }
 section#curiosities h2 {
   text-align: center;
