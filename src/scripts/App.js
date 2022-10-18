@@ -1,5 +1,6 @@
 import { nav } from "./Nav.js";
 import { about } from "./About.js";
+import { curio } from "./Curiosities.js";
 class App {
   constructor() {
     this.scrollTopButton = document.querySelector("#scrollTop");
@@ -22,6 +23,7 @@ export const app = new App();
 app.init();
 nav.init();
 about.init();
+curio.init();
 window.onload = () => {
   setTimeout(() => {
     document.body.classList.add("loaded");

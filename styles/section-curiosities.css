@@ -1,0 +1,45 @@
+section#curiosities {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 8vh;
+  position: relative;
+  height: 80vh;
+  padding: 20px;
+  transition: 0.5s;
+  /* opacity: 0; */
+}
+section#curiosities h2 {
+  text-align: center;
+}
+section#curiosities div.curiosities-box {
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  flex-basis: 25%;
+  box-shadow: 0 8px 24px 0px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  align-items: center;
+  transition: 0.8s;
+  transform: translateX(100vw);
+}
+section#curiosities div.curiosities-box.loaded {
+  opacity: 1;
+  transform: translateX(0);
+}
+section#curiosities div.curiosities-box i {
+  font-size: 66px;
+  color: rgb(15, 74, 15);
+  position: relative;
+}
+section#curiosities div.curiosities-box:nth-child(3) i {
+  animation: spin 2s ease-in-out infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

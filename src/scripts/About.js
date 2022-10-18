@@ -3,6 +3,7 @@ class About {
     this.aboutSection = document.querySelector("section#about");
     this.mainSection = document.querySelector("main");
     this.showMoreButton = document.querySelector("#show-about");
+    this.slides = document.querySelectorAll(".small-box");
   }
   init() {
     this.showMoreButton.addEventListener("click", this.handleShowAbout);
