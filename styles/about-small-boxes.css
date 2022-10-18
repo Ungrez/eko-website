@@ -1,15 +1,3 @@
-section#about div.small-box div.text-about {
-  flex-basis: 45%;
-  padding: 20px;
-  font-weight: 500;
-}
-div.text-about span {
-  font-weight: 700;
-}
-section#about div.small-box div.about-small-box {
-  flex-basis: 55%;
-  display: flex;
-}
 section#about div.small-box:nth-child(1) div.solar-panels {
   flex-basis: 35%;
   background-repeat: no-repeat;
@@ -44,6 +32,41 @@ section#about div.small-box:nth-child(1) div.piggy-bank {
   background-repeat: no-repeat;
   background-position: bottom;
   background-image: url("../imgs/piggy-bank.svg");
+}
+section#about div.small-box:nth-child(2) div.money {
+  background-image: url("../imgs/money-about.svg");
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section#about div.small-box:nth-child(2) div.about-small-box {
+  position: relative;
+}
+section#about div.small-box:nth-child(2) div.no-money {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+div.small-box:nth-child(2) div.no-money div.lines {
+  position: absolute;
+  height: 0.5em;
+  width: 7em;
+  background-color: red;
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  animation: loadingEnergy 0.8s ease-in-out infinite alternate;
+}
+div.small-box:nth-child(2) div.no-money div.lines:nth-child(1) {
+  transform: rotate(-45deg);
+}
+div.small-box:nth-child(2) div.no-money div.lines:nth-child(2) {
+  transform: rotate(45deg);
+}
+section#about div.small-box:nth-child(3) div.text-about {
+  flex-basis: 100%;
 }
 @keyframes loadingEnergy {
   from {

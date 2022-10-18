@@ -28,3 +28,15 @@ section#about div.small-box {
   box-shadow: 0 8px 24px 0px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
 }
+section#about div.small-box div.text-about {
+  flex-basis: 45%;
+  padding: 20px;
+  font-weight: 500;
+}
+div.text-about span {
+  font-weight: 700;
+}
+section#about div.small-box div.about-small-box {
+  flex-basis: 55%;
+  display: flex;
+}
