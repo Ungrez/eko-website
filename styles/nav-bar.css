@@ -2,7 +2,7 @@ nav {
   display: flex;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   background-color: hsl(0, 0%, 100%);
   height: 10vh;
   justify-content: space-between;
@@ -48,6 +48,7 @@ ul div#nav-section div#close-button {
   width: 35px;
   border: 1px solid #bbb;
   position: relative;
+  cursor: pointer;
 }
 ul div#nav-section div#close-button div.line:nth-child(1) {
   background-color: #333;
@@ -91,6 +92,7 @@ div#burger {
   justify-content: space-between;
   width: 30px;
   height: 20px;
+  cursor: pointer;
 }
 div#burger div.line {
   border-radius: 5px;
@@ -109,4 +111,32 @@ div#burger div.line:nth-child(3) {
   background-color: #333;
   height: 20%;
   width: 100%;
+}
+@media (min-width: 768px) {
+  div#burger {
+    display: none;
+  }
+  ul.nav-links {
+    display: flex;
+    padding: 20px;
+    position: static;
+    gap: 15px;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    background-color: white;
+    right: -100vw;
+    transition: 0.5s;
+    font-weight: 500;
+    opacity: 0.97;
+  }
+  ul div#nav-section div#close-button {
+    display: none;
+  }
+  ul div#nav-section {
+    display: none;
+  }
+  ul li {
+    align-self: center;
+  }
 }

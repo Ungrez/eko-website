@@ -80,3 +80,11 @@ section#about div.small-box div.about-small-box {
     font-size: 18px;
   }
 }
+@media (min-width: 1400px) {
+  section#about div.small-box {
+    height: 500px;
+  }
+  section#about div.small-box div.about-small-box {
+    padding: 20px;
+  }
+}
