@@ -5,11 +5,15 @@ class Nav {
     this.buttonShowNavBar = document.querySelector("#burger");
     this.closeNavBar = document.querySelector("#close-button");
     this.lastScrollY = window.scrollY;
+    this.links = document.querySelectorAll(".link");
   }
   init() {
     this.buttonShowNavBar.addEventListener("click", this.handleShowNavBar);
     this.closeNavBar.addEventListener("click", this.handleHideNavBar);
     document.addEventListener("scroll", this.scrollEffect);
+    this.links.forEach((link) =>
+      link.addEventListener("click", this.handleHideNavBar)
+    );
   }
   handleShowNavBar = () => {
     this.navBarMenu.classList.add("active");

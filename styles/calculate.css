@@ -1,3 +1,46 @@
 section#calculate {
+  position: relative;
+  margin-top: 10vh;
   height: 50vh;
+  max-width: 100%;
+  background-image: url("../imgs/calculator-section.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section#calculate::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  backdrop-filter: blur(2px) brightness(60%);
+}
+section#calculate div#calculate-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 8px 24px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  height: 50%;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+}
+section#calculate div#calculate-box button#calculator {
+  background-color: #333333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 10px;
+  transition: 0.3s;
+  color: #ffffff;
+}
+section#calculate div#calculate-box button#calculator:active {
+  background-color: #fff;
+  color: #000000;
 }
