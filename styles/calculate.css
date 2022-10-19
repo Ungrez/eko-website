@@ -39,8 +39,33 @@ section#calculate div#calculate-box button#calculator {
   margin: 10px;
   transition: 0.3s;
   color: #ffffff;
+  cursor: pointer;
+}
+section#calculate div#calculate-box button#calculator:hover {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 8px 24px 0px rgba(0, 0, 0, 0.3);
 }
 section#calculate div#calculate-box button#calculator:active {
   background-color: #fff;
   color: #000000;
+}
+@media (min-width: 576px) {
+  section#calculate div#calculate-box button#calculator {
+    margin-top: 10%;
+  }
+  section#calculate div#calculate-box h3 {
+    padding: 10px;
+  }
+}
+@media (min-width: 992px) {
+  section#calculate div#calculate-box button#calculator {
+    padding: 20px 40px;
+    font-size: 16px;
+    margin-top: 5%;
+  }
+  section#calculate div#calculate-box h3 {
+    font-size: 22px;
+    padding: 10px 50px;
+  }
 }

@@ -29,6 +29,7 @@ div#main-container div#scrollTop {
   bottom: -100px;
   right: 20px;
   transition: 0.3s;
+  cursor: pointer;
 }
 div#main-container div#scrollTop.active {
   bottom: 20px;

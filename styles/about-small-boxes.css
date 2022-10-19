@@ -76,3 +76,9 @@ section#about div.small-box:nth-child(3) div.text-about {
     opacity: 1;
   }
 }
+@media (min-width: 1200px) {
+  div.small-box:nth-child(2) div.no-money div.lines {
+    height: 0.3em;
+    width: 5em;
+  }
+}

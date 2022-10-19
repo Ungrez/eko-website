@@ -47,8 +47,10 @@ div#main-buttons button {
   border-radius: 4px;
   font-weight: 600;
   margin: 10px;
-  transition: 0.3s;
+  transition: 0.6s;
+  cursor: pointer;
 }
+
 div#main-buttons button:nth-child(1) {
   background-color: rgb(15, 74, 15);
   color: #ffffff;
@@ -58,11 +60,48 @@ div#main-buttons button:active {
   color: #ffffff;
   box-shadow: 0 0 8px 0 black;
 }
+div#main-buttons button:hover {
+  background-color: black;
+  color: white;
+}
 @keyframes slide {
   from {
     background-position-x: 0;
   }
   to {
     background-position-x: -50vw;
+  }
+}
+@media (min-width: 576px) {
+  div#main-buttons button {
+    padding: 15px 25px;
+  }
+  section#description h4 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  main {
+    animation: none;
+  }
+}
+@media (min-width: 1200px) {
+  section#description h1 {
+    font-size: 42px;
+    padding-bottom: 20px;
+  }
+  section#description h2 {
+    padding-left: 5px;
+    font-size: 32px;
+  }
+  section#description h4 {
+    font-weight: 500;
+    padding: 10px 0 20px 5px;
+    font-size: 26px;
+  }
+  div#main-buttons button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 20px;
   }
 }

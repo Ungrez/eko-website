@@ -46,3 +46,21 @@ section#curiosities div.curiosities-box:nth-child(3) i {
     transform: rotate(360deg);
   }
 }
+@media (min-width: 576px) {
+  section#curiosities div.curiosities-box {
+    justify-content: center;
+  }
+  section#curiosities div.curiosities-box h4 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  section#curiosities div.curiosities-box {
+    margin: 0 5em;
+  }
+}
+@media (min-width: 1200px) {
+  section#curiosities div.curiosities-box {
+    margin: 0 20em;
+  }
+}

@@ -1,114 +1,112 @@
-@media (width: 375px) and (orientation: portrait) {
-  nav {
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    background-color: hsl(0, 0%, 100%);
-    height: 10vh;
-    justify-content: space-between;
-    z-index: 2;
-    box-shadow: 0 8px 24px 0px rgba(0, 0, 0, 0.15);
-    transition: 0.3s;
-  }
-  nav.hiden-nav {
-    top: -10vh;
-    box-shadow: none;
-  }
-  nav div.logo {
-    align-self: center;
-    font-size: 22px;
-    padding-left: 10px;
-  }
-  ul.nav-links {
-    display: flex;
-    padding: 20px;
-    position: fixed;
-    gap: 15px;
-    height: 80vh;
-    width: 100vw;
-    flex-direction: column;
-    background-color: white;
-    right: -100vw;
-    transition: 0.5s;
-    font-weight: 500;
-    opacity: 0.97;
-  }
-  ul.nav-links.active {
-    right: 0;
-  }
-  ul div#nav-section {
-    color: #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  ul div#nav-section div#close-button {
-    height: 35px;
-    border-radius: 50%;
-    width: 35px;
-    border: 1px solid #bbb;
-    position: relative;
-  }
-  ul div#nav-section div#close-button div.line:nth-child(1) {
-    background-color: #333;
-    position: absolute;
-    transform: rotate(-45deg) scale(0.5);
-    top: 45%;
-    width: 100%;
-    height: 10%;
-  }
-  ul div#nav-section div#close-button div.line:nth-child(2) {
-    background-color: #333;
-    position: absolute;
-    transform: rotate(45deg) scale(0.5);
-    top: 45%;
-    width: 100%;
-    height: 10%;
-  }
-  ul li {
-    color: #777;
-    list-style: none;
-    font-size: 18px;
-  }
-  ul li a {
-    max-width: 50%;
-    display: flex;
-    color: #777;
-    text-decoration: none;
-    align-items: center;
-  }
-  ul li a.active {
-    color: rgb(206, 29, 182);
-  }
-  ul li a i {
-    padding-right: 10px;
-  }
-  div#burger {
-    margin-right: 15px;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-  }
-  div#burger div.line {
-    border-radius: 5px;
-  }
-  div#burger div.line:nth-child(1) {
-    background-color: #333;
-    height: 20%;
-    width: 100%;
-  }
-  div#burger div.line:nth-child(2) {
-    background-color: #333;
-    height: 20%;
-    width: 100%;
-  }
-  div#burger div.line:nth-child(3) {
-    background-color: #333;
-    height: 20%;
-    width: 100%;
-  }
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: hsl(0, 0%, 100%);
+  height: 10vh;
+  justify-content: space-between;
+  z-index: 2;
+  box-shadow: 0 8px 24px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+nav.hiden-nav {
+  top: -10vh;
+  box-shadow: none;
+}
+nav div.logo {
+  align-self: center;
+  font-size: 22px;
+  padding-left: 10px;
+}
+ul.nav-links {
+  display: flex;
+  padding: 20px;
+  position: fixed;
+  gap: 15px;
+  height: 80vh;
+  width: 100vw;
+  flex-direction: column;
+  background-color: white;
+  right: -100vw;
+  transition: 0.5s;
+  font-weight: 500;
+  opacity: 0.97;
+}
+ul.nav-links.active {
+  right: 0;
+}
+ul div#nav-section {
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul div#nav-section div#close-button {
+  height: 35px;
+  border-radius: 50%;
+  width: 35px;
+  border: 1px solid #bbb;
+  position: relative;
+}
+ul div#nav-section div#close-button div.line:nth-child(1) {
+  background-color: #333;
+  position: absolute;
+  transform: rotate(-45deg) scale(0.5);
+  top: 45%;
+  width: 100%;
+  height: 10%;
+}
+ul div#nav-section div#close-button div.line:nth-child(2) {
+  background-color: #333;
+  position: absolute;
+  transform: rotate(45deg) scale(0.5);
+  top: 45%;
+  width: 100%;
+  height: 10%;
+}
+ul li {
+  color: #777;
+  list-style: none;
+  font-size: 18px;
+}
+ul li a {
+  max-width: 50%;
+  display: flex;
+  color: #777;
+  text-decoration: none;
+  align-items: center;
+}
+ul li a.active {
+  color: rgb(206, 29, 182);
+}
+ul li a i {
+  padding-right: 10px;
+}
+div#burger {
+  margin-right: 15px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+div#burger div.line {
+  border-radius: 5px;
+}
+div#burger div.line:nth-child(1) {
+  background-color: #333;
+  height: 20%;
+  width: 100%;
+}
+div#burger div.line:nth-child(2) {
+  background-color: #333;
+  height: 20%;
+  width: 100%;
+}
+div#burger div.line:nth-child(3) {
+  background-color: #333;
+  height: 20%;
+  width: 100%;
 }
